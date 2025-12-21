@@ -1,6 +1,29 @@
 import React from 'react'
 
 function ContentMedia() {
+  const books = [
+    {
+      title: 'Bacchon ke Sunahre Bhavishya ke Sutra',
+      link: 'https://www.amazon.in/-/hi/Dinesh-Pathak/dp/8188457868',
+      image: '/Bacchon_ke_Sunahre_Bhavishya_ke_Sutra.jpg',
+    },
+    {
+      title: 'Bacchon ki Safalta ke Mantra',
+      link: 'https://www.amazon.in/-/hi/Dinesh-Pathak/dp/8171383211',
+      image: '/Bacchon_ki_Safalta_ke_Mantra.jpg',
+    },
+    {
+      title: 'Tina',
+      link: 'https://www.amazon.in/Tina-Dinesh-Pathak/dp/8187770384',
+      image: '/Tina.jpg',
+    },
+    {
+      title: 'Ummeed Ki Kiran: Desh Ki Yuva Peedhi Ko Samarpit Ek Prayas',
+      link: 'https://www.amazon.in/-/hi/Dinesh-Pathak-ebook/dp/B07V64S4TV',
+      image: '/Ummeed_Ki_Kiran.jpg',
+    },
+  ]
+
   return (
     <section id="content" className="py-16 md:py-24 bg-gray-50">
       <div className="section-container">
@@ -46,6 +69,33 @@ function ContentMedia() {
                 </p>
               </div>
             </div>
+          </div>
+        </div>
+
+        {/* Books Section */}
+        <div className="mt-16">
+          <h3 className="text-2xl md:text-3xl font-serif font-semibold text-gray-900 text-center mb-10">
+            Books by Dinesh Pathak
+          </h3>
+          <div className="flex flex-wrap justify-center gap-8">
+            {books.map((book) => (
+              <div key={book.title} className="flex flex-col items-center gap-3 w-40">
+                <div className="w-40 h-60 overflow-hidden rounded-lg border border-gray-200 bg-white shadow-sm">
+                  <img src={book.image} alt={book.title} className="w-full h-full object-cover" />
+                </div>
+                <p className="text-center text-sm font-medium text-gray-800 h-24 flex items-center justify-center px-2">
+                  {book.title}
+                </p>
+                <a
+                  href={book.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex w-full items-center justify-center rounded-full bg-amber-500 px-4 py-1.5 text-xs font-semibold text-white transition hover:bg-amber-600"
+                >
+                  Buy on Amazon
+                </a>
+              </div>
+            ))}
           </div>
         </div>
       </div>
