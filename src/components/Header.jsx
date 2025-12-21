@@ -11,7 +11,7 @@ function Header({ onBookNowClick }) {
               Dinesh Pathak
             </h1>
             <p className="text-xs md:text-sm text-gray-600 mt-1">
-              Senior Counsellor & Life Guide
+              Counsellor & Life Guide
             </p>
           </div>
 

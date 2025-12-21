@@ -4,9 +4,9 @@ function ServiceSelection({ onServiceSelect, selectedService }) {
   const services = [
     {
       id: 'education',
-      title: 'Education Counselling',
-      price: '₹2,500',
-      duration: '60 minutes',
+      title: 'Career Counselling',
+      price: '₹499',
+      duration: '45 minutes',
       icon: (
         <svg className="w-10 h-10 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 14l9-5-9-5-9 5 9 5z" />
@@ -24,8 +24,8 @@ function ServiceSelection({ onServiceSelect, selectedService }) {
     {
       id: 'marriage',
       title: 'Marriage & Relationship Guidance',
-      price: '₹3,000',
-      duration: '75 minutes',
+      price: '₹1499',
+      duration: '45 minutes',
       icon: (
         <svg className="w-10 h-10 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
@@ -41,9 +41,9 @@ function ServiceSelection({ onServiceSelect, selectedService }) {
     },
     {
       id: 'life',
-      title: 'Life & Family Guidance',
-      price: '₹2,500',
-      duration: '60 minutes',
+      title: 'Parenting Guidance',
+      price: '₹999',
+      duration: '45 minutes',
       icon: (
         <svg className="w-10 h-10 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7" />
