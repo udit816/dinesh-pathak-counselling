@@ -22,6 +22,11 @@ function ContentMedia() {
       link: 'https://www.amazon.in/-/hi/Dinesh-Pathak-ebook/dp/B07V64S4TV',
       image: '/Ummeed_Ki_Kiran.jpg',
     },
+    {
+      title: 'Bas Thoda Saa',
+      link: '',
+      image: '/Bas_thoda_saa.jpeg',
+    },
   ]
 
   return (
