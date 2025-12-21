@@ -43,7 +43,7 @@ function Services({ onBookNowClick }) {
         <h2 className="text-3xl md:text-4xl lg:text-5xl font-serif font-bold text-gray-900 mb-4 text-center">
           Services
         </h2>
-        <p className="text-center text-gray-600 mb-12 max-w-2xl mx-auto">
+        <p className="text-justify md:text-center text-gray-600 mb-12 max-w-2xl mx-auto">
           Professional counselling services tailored to your unique needs
         </p>
 
@@ -67,7 +67,7 @@ function Services({ onBookNowClick }) {
               </h3>
 
               {/* Service Description */}
-              <p className="text-sm md:text-base text-gray-600 leading-relaxed mb-6 flex-grow">
+              <p className="text-sm md:text-base text-gray-600 leading-relaxed mb-6 flex-grow text-justify">
                 {service.description}
               </p>
 
