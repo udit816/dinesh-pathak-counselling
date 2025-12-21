@@ -37,37 +37,19 @@ function ContentMedia() {
           Short reflections and guidance shared through videos and conversations, addressing common questions around education, relationships, and family decisions.
         </p>
 
-        {/* Placeholder for YouTube/Instagram embeds */}
-        {/* TODO: Replace with actual YouTube embed code or Instagram feed when content is ready */}
+        {/* YouTube embed */}
         <div className="max-w-4xl mx-auto">
-          <div className="bg-white border-2 border-dashed border-gray-300 rounded-lg">
+          <div className="bg-white border-2 border-dashed border-gray-300 rounded-lg overflow-hidden">
             {/* 16:9 aspect ratio container */}
-            <div className="aspect-video flex items-center justify-center">
-              <div className="text-center p-8">
-                <svg
-                  className="w-16 h-16 text-gray-400 mx-auto mb-4"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"
-                  />
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-                  />
-                </svg>
-                <p className="text-gray-500 font-medium">Video content coming soon</p>
-                <p className="text-sm text-gray-400 mt-2">
-                  YouTube and social media content will be embedded here
-                </p>
-              </div>
+            <div className="aspect-video">
+              <iframe
+                src="https://www.youtube.com/embed/XwRq4sBFTr4"
+                title="Guidance and reflections by Dinesh Pathak"
+                className="w-full h-full"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowFullScreen
+              />
             </div>
           </div>
         </div>
