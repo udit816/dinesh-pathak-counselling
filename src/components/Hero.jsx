@@ -12,7 +12,7 @@ function Hero({ onBookNowClick }) {
 
           {/* Sub-headline */}
           <p className="text-lg md:text-xl lg:text-2xl text-gray-700 mb-4 leading-relaxed">
-            Thoughtful counselling for education, marriage, and family matters — grounded in experience, clarity, and understanding.
+            Thoughtful counselling for career, marriage, and parenting — grounded in experience, clarity, and understanding.
           </p>
 
           {/* Supporting line */}
