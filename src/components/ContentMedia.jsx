@@ -1,31 +1,38 @@
 import React from 'react'
+const bookImages = {
+  'Bacchon ke Sunahre Bhavishya ke Sutra': new URL('../assets/Bacchon_ke_Sunahre_Bhavishya_ke_Sutra.jpg', import.meta.url).href,
+  'Bacchon ki Safalta ke Mantra': new URL('../assets/Bacchon_ki_Safalta_ke_Mantra.jpg', import.meta.url).href,
+  Tina: new URL('../assets/Tina.jpg', import.meta.url).href,
+  'Ummeed Ki Kiran: Desh Ki Yuva Peedhi Ko Samarpit Ek Prayas': new URL('../assets/Ummeed_Ki_Kiran.jpg', import.meta.url).href,
+  'Bas Thoda Saa': new URL('../assets/Bas_thoda_saa.jpeg', import.meta.url).href,
+}
 
 function ContentMedia() {
   const books = [
     {
       title: 'Bacchon ke Sunahre Bhavishya ke Sutra',
       link: 'https://www.amazon.in/-/hi/Dinesh-Pathak/dp/8188457868',
-      image: '/Bacchon_ke_Sunahre_Bhavishya_ke_Sutra.jpg',
+      image: bookImages['Bacchon ke Sunahre Bhavishya ke Sutra'],
     },
     {
       title: 'Bacchon ki Safalta ke Mantra',
       link: 'https://www.amazon.in/-/hi/Dinesh-Pathak/dp/8171383211',
-      image: '/Bacchon_ki_Safalta_ke_Mantra.jpg',
+      image: bookImages['Bacchon ki Safalta ke Mantra'],
     },
     {
       title: 'Tina',
       link: 'https://www.amazon.in/Tina-Dinesh-Pathak/dp/8187770384',
-      image: '/Tina.jpg',
+      image: bookImages.Tina,
     },
     {
       title: 'Ummeed Ki Kiran: Desh Ki Yuva Peedhi Ko Samarpit Ek Prayas',
       link: 'https://www.amazon.in/-/hi/Dinesh-Pathak-ebook/dp/B07V64S4TV',
-      image: '/Ummeed_Ki_Kiran.jpg',
+      image: bookImages['Ummeed Ki Kiran: Desh Ki Yuva Peedhi Ko Samarpit Ek Prayas'],
     },
     {
       title: 'Bas Thoda Saa',
       link: '',
-      image: '/Bas_thoda_saa.jpeg',
+      image: bookImages['Bas Thoda Saa'],
     },
   ]
 

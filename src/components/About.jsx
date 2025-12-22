@@ -1,4 +1,5 @@
 import React from 'react'
+import profileImg from '../assets/dp_01.jpg'
 
 function About() {
   return (
@@ -16,7 +17,7 @@ function About() {
             <div className="w-full md:max-w-xs md:float-left md:mr-10 md:mb-6">
               <div className="relative overflow-hidden rounded-2xl shadow-xl">
                 <img
-                  src="/dp_01.jpg"
+                  src={profileImg}
                   alt="Dinesh Pathak - Senior Counsellor reading a book"
                   className="w-full h-full object-cover"
                 />
