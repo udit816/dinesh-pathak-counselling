@@ -6,7 +6,7 @@ export default defineConfig(({ command }) => {
 
   return {
     plugins: [react()],
-    base: isProd ? "/dinesh-pathak-counselling/" : "/",
+    base: process.env.VITE_BASE_PATH || "/",
     server: {
       port: 3000,
       host: true
