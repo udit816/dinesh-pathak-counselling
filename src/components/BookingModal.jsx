@@ -53,7 +53,7 @@ function BookingModal({ isOpen, onClose }) {
   return (
     <div className="fixed inset-0 z-50 overflow-y-auto">
       {/* Backdrop */}
-      <div 
+      <div
         className="fixed inset-0 bg-black bg-opacity-50 transition-opacity"
         onClick={handleClose}
       />
@@ -79,11 +79,10 @@ function BookingModal({ isOpen, onClose }) {
                   <React.Fragment key={step}>
                     <div className="flex flex-col items-center">
                       <div
-                        className={`w-10 h-10 rounded-full flex items-center justify-center font-semibold transition-all ${
-                          currentStep >= step
-                            ? 'bg-emerald-600 text-white'
-                            : 'bg-gray-200 text-gray-500'
-                        }`}
+                        className={`w-10 h-10 rounded-full flex items-center justify-center font-semibold transition-all ${currentStep >= step
+                          ? 'bg-emerald-600 text-white'
+                          : 'bg-gray-200 text-gray-500'
+                          }`}
                       >
                         {step}
                       </div>
@@ -93,9 +92,8 @@ function BookingModal({ isOpen, onClose }) {
                     </div>
                     {step < 3 && (
                       <div
-                        className={`h-1 w-16 transition-all ${
-                          currentStep > step ? 'bg-emerald-600' : 'bg-gray-200'
-                        }`}
+                        className={`h-1 w-16 transition-all ${currentStep > step ? 'bg-emerald-600' : 'bg-gray-200'
+                          }`}
                       />
                     )}
                   </React.Fragment>
@@ -135,11 +133,11 @@ function BookingModal({ isOpen, onClose }) {
                 <p className="text-gray-600 mb-6 text-center">
                   Now, please select your preferred date and time for the session
                 </p>
-                
+
                 {/* Calendly Inline Widget */}
                 <div className="calendly-container bg-gray-50 rounded-lg p-4">
                   <InlineWidget
-                    url="https://calendly.com/pathak-udit816/private-counselling-session"
+                    url="https://calendly.com/dpathak0108/counselling-sessions-with-dinesh-pathak"
                     styles={{
                       height: '700px',
                       minWidth: '100%'
@@ -163,7 +161,7 @@ function BookingModal({ isOpen, onClose }) {
                     }}
                   />
                 </div>
-                
+
                 <div className="mt-4 text-center">
                   <button
                     onClick={handleBookingComplete}

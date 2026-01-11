@@ -24,7 +24,7 @@ A professional, multi-stage booking system that guides users through:
 **Stage 3: Calendly Booking**
 - Only accessible after successful payment
 - Embedded Calendly inline widget
-- Pre-configured with your Calendly URL: `https://calendly.com/pathak-udit816/private-counselling-session`
+- Pre-configured with your Calendly URL: `https://calendly.com/dpathak0108/counselling-sessions-with-dinesh-pathak`
 - Service information passed to Calendly
 - Emerald green theme matching your brand
 

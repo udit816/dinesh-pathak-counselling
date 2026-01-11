@@ -5,7 +5,7 @@ function ServiceSelection({ onServiceSelect, selectedService }) {
     {
       id: 'education',
       title: 'Career Counselling',
-      price: '₹499',
+      price: '₹999',
       duration: '45 minutes',
       icon: (
         <svg className="w-10 h-10 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -72,11 +72,10 @@ function ServiceSelection({ onServiceSelect, selectedService }) {
         {services.map((service) => (
           <div
             key={service.id}
-            className={`border-2 rounded-xl p-6 cursor-pointer transition-all hover:shadow-lg ${
-              selectedService?.id === service.id
+            className={`border-2 rounded-xl p-6 cursor-pointer transition-all hover:shadow-lg ${selectedService?.id === service.id
                 ? 'border-emerald-600 bg-emerald-50'
                 : 'border-gray-200 hover:border-emerald-300'
-            }`}
+              }`}
             onClick={() => onServiceSelect(service)}
           >
             {/* Icon */}
