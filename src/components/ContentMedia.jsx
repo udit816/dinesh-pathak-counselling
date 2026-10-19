@@ -5,6 +5,7 @@ const bookImages = {
   Tina: new URL('../assets/Tina.jpg', import.meta.url).href,
   'Ummeed Ki Kiran: Desh Ki Yuva Peedhi Ko Samarpit Ek Prayas': new URL('../assets/Ummeed_Ki_Kiran.jpg', import.meta.url).href,
   'Bas Thoda Saa': new URL('../assets/Bas_thoda_saa.jpeg', import.meta.url).href,
+  'Sab Theek Hai': new URL('../assets/Sab_Theek_Hai.jpg', import.meta.url).href,
 }
 
 function ContentMedia() {
@@ -33,6 +34,12 @@ function ContentMedia() {
       title: 'Bas Thoda Saa',
       link: '',
       image: bookImages['Bas Thoda Saa'],
+    },
+    {
+      title: 'Sab Theek Hai',
+      link: 'https://www.amazon.in/dp/9347163392',
+      flipkartLink: 'https://www.flipkart.com/sab-theek-hai/p/itm9709f76d92ebd?pid=9789347163395',
+      image: bookImages['Sab Theek Hai'],
     },
   ]
 
@@ -71,23 +78,35 @@ function ContentMedia() {
           <h3 className="text-2xl md:text-3xl font-serif font-semibold text-gray-900 text-center mb-10">
             Books by Dinesh Pathak
           </h3>
-          <div className="flex flex-wrap justify-center gap-8">
+          <div className="mx-auto grid max-w-xs grid-cols-2 gap-x-4 gap-y-10 sm:max-w-2xl sm:grid-cols-3 sm:gap-x-6 xl:max-w-none xl:grid-cols-6">
             {books.map((book) => (
-              <div key={book.title} className="flex flex-col items-center gap-3 w-40">
-                <div className="w-40 h-60 overflow-hidden rounded-lg border border-gray-200 bg-white shadow-sm">
-                  <img src={book.image} alt={book.title} className="w-full h-full object-cover" />
+              <div key={book.title} className="flex flex-col items-center gap-3">
+                <div className="aspect-[2/3] w-full overflow-hidden rounded-lg border border-gray-200 bg-white shadow-sm">
+                  <img src={book.image} alt={book.title} loading="lazy" className="w-full h-full object-cover" />
                 </div>
-                <p className="text-center text-sm font-medium text-gray-800 h-24 flex items-center justify-center px-2">
+                <p className="flex min-h-[5rem] items-center justify-center px-1 text-center text-sm font-medium leading-snug text-gray-800">
                   {book.title}
                 </p>
-                <a
-                  href={book.link}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex w-full items-center justify-center rounded-full bg-amber-500 px-4 py-1.5 text-xs font-semibold text-white transition hover:bg-amber-600"
-                >
-                  Buy on Amazon
-                </a>
+                <div className="flex w-full flex-col gap-2">
+                  <a
+                    href={book.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex w-full items-center justify-center rounded-full bg-amber-500 px-4 py-1.5 text-xs font-semibold text-white transition hover:bg-amber-600"
+                  >
+                    Buy on Amazon
+                  </a>
+                  {book.flipkartLink && (
+                    <a
+                      href={book.flipkartLink}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex w-full items-center justify-center rounded-full bg-blue-600 px-4 py-1.5 text-xs font-semibold text-white transition hover:bg-blue-700"
+                    >
+                      Buy on Flipkart
+                    </a>
+                  )}
+                </div>
               </div>
             ))}
           </div>
