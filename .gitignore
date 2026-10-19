@@ -87,6 +87,9 @@ junit.xml
 *.ipr
 out/
 
+# Claude Code (local tooling config)
+.claude/
+
 # Sublime Text
 *.sublime-project
 *.sublime-workspace

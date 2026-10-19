@@ -34,7 +34,7 @@ function About() {
             </p>
 
             <p>
-              Dinesh Pathak is the author of five books, all centered on parenting and youth development. His writing reflects real-world concerns around education, career choices, family expectations, and personal growth. He currently works with TV9 BharatVarsh as an author, where his articles and video content focus primarily on careers and education, helping young people and parents make informed, thoughtful decisions.
+              Dinesh Pathak is the author of six books, all centered on parenting and youth development. His writing reflects real-world concerns around education, career choices, family expectations, and personal growth. He currently works with TV9 BharatVarsh as an author, where his articles and video content focus primarily on careers and education, helping young people and parents make informed, thoughtful decisions.
             </p>
 
             <p>
